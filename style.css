@@ -1,0 +1,60 @@
+body {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.navigation-item {
+    display: inline-flex;
+    margin-right: 20px;
+}
+
+.banner {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+#aboutme {
+    width: 100%;
+    display: flex;
+}
+
+.textfield {
+    height: auto;
+    width: 33.33%;
+    border: 1px solid black;
+}
+
+#projects {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-headline h3 {
+    display: inline;
+}
+
+
+

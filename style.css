@@ -56,5 +56,16 @@ nav {
     display: inline;
 }
 
+#skills {
+    width: 100%;
+    border: 1px solid black;
+}
 
+.project img {
+    height: 300px;
+    width: 300px;
+}
 
+#contact {
+    border: 1px solid black;
+}

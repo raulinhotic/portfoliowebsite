@@ -16,12 +16,26 @@ a {
     font-weight: bold;
 }
 
+li {
+    color: gray;
+    font-weight: bold;
+}
+
 nav {
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
+}
+
+#darkmode {
+    cursor: pointer;
+}
+
+#lightmode {
+    display: none;
+    cursor: pointer;
 }
 
 h1 {

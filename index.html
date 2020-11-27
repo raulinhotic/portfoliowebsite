@@ -12,20 +12,21 @@
         <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     </head>
 
-    <body>
+    <body id="backgroundbody">
         <header>
-            <nav>
+            <nav id="navbar">
                 <h1>ruLo</h1>
                 <ul>
                     <li class="navigation-item"><a href="#aboutme">About me</a></li>
                     <li class="navigation-item"><a href="#projects">Projects</a></li>
                     <li class="navigation-item"><a href="#skills">Skills</a></li>
                     <li class="navigation-item"><a href="/contact.html">Contact</a></li>
-                    <li class="navigation-item"><a href="">Dark Mode</a></li>
+                    <li class="navigation-item" id="darkmode">Dark Mode</li>
+                    <li class="navigation-item" id="lightmode">Light Mode</li>
                 </ul>
             </nav>
 
-            <section class="banner">
+            <section class="banner" id="bannerbackground">
                 <img src="profilepic.jpg">
             </section>
         </header>
@@ -87,6 +88,44 @@
             </section>
         </main>
 
-        <footer>Made with <span class="heart">♥</span> in Germany</footer>
+        <footer id="footermessage">Made with <span class="heart">♥</span> in Germany</footer>
     </body>
+
+    <script>
+        let element = document.getElementById('darkmode');
+        let lightmode = document.getElementById('lightmode');
+        let navbar = document.getElementById('navbar');
+        let aboutme = document.getElementById('aboutme');
+        let projects = document.getElementById('projects');
+        let skills = document.getElementById('skills');
+        let background = document.getElementById('backgroundbody');
+        let footermessage = document.getElementById('footermessage');
+        let bannerbackground = document.getElementById("bannerbackground");
+        
+        element.onclick = function () { 
+            element.style.display = "none";
+            lightmode.style.display = "initial";
+            projects.style.backgroundColor = "black";
+            aboutme.style.backgroundColor = "black";
+            skills.style.backgroundColor = "black";
+            skills.style.border = "1px solid black";
+            navbar.style.backgroundColor = "black";
+            footermessage.style.color = "white";
+            document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')";
+            bannerbackground.style.backgroundImage = "url('https://images.unsplash.com/photo-1529753253655-470be9a42781?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80')";
+             };
+
+        lightmode.onclick = function () { 
+            element.style.display = "initial";
+            lightmode.style.display = "none";
+            projects.style.backgroundColor = "white";
+            aboutme.style.backgroundColor = "white";
+            skills.style.backgroundColor = "white";
+            skills.style.border = "1px solid white";
+            navbar.style.backgroundColor = "white";
+            footermessage.style.color = "gray";
+            document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1531685250784-7569952593d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')";
+            bannerbackground.style.backgroundImage = "url('https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')";
+             };
+    </script>
 </html>

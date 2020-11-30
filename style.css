@@ -176,3 +176,17 @@ footer {
     text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+    #aboutme {
+        flex-direction: column;
+    }
+
+    .textfield {
+        width: 100%;
+    }
+
+    .navigation-item {
+        display: flex;
+    }
+}
+

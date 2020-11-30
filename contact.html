@@ -10,11 +10,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        <script src="darkmodecontact.js" defer async></script>
     </head>
     
     <body>
         <header>
-            <nav id="navbar">
+            <nav>
                 <h1>ruLo</h1>
                 <ul>
                     <li class="navigation-item"><a href="/#aboutme">About me</a></li>
@@ -26,7 +27,7 @@
                 </ul>
             </nav>
 
-            <section class="banner" id="bannerbackground">
+            <section class="banner">
                 <img src="profilepic.jpg">
             </section>
         </header>
@@ -45,40 +46,9 @@
             </section>
         </main>
 
-        <footer id="footermessage">Made with <span class="heart">♥</span> in Germany</footer>
+        <footer>Made with <span class="heart">♥</span> in Germany</footer>
         
-    </body>
-
-    <script>
-        let element = document.getElementById('darkmode');
-        let lightmode = document.getElementById('lightmode');
-        let navbar = document.getElementById('navbar');
-        let contact = document.getElementById('contact');
-        let footermessage = document.getElementById('footermessage');
-        let bannerbackground = document.getElementById("bannerbackground");
-        element.onclick = function () { 
-            element.style.display = "none";
-            lightmode.style.display = "initial";
-            contact.style.backgroundColor = "black";
-            contact.style.border = "1px solid black";
-            navbar.style.backgroundColor = "black";
-            footermessage.style.color = "white";
-            document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')";
-            bannerbackground.style.backgroundImage = "url('https://images.unsplash.com/photo-1529753253655-470be9a42781?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80')";
-             };
-        
-        lightmode.onclick = function () { 
-            element.style.display = "initial";
-            lightmode.style.display = "none";
-            contact.style.backgroundColor = "white";
-            contact.style.border = "1px solid white";
-            navbar.style.backgroundColor = "white";
-            footermessage.style.color = "gray";
-            document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1531685250784-7569952593d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')";
-            bannerbackground.style.backgroundImage = "url('https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')";
-            };
-    </script>
-
+    </body>    
 </html>
 
 

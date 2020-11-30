@@ -1,5 +1,7 @@
+/* UNIVERSAL STYLES */
+
 body {
-    width: 850px;
+    max-width: 850px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -9,6 +11,16 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+    margin-left: 50px;
+    letter-spacing: 0.25em;
+    color: gray;
+}
+
+/* HEADER STYLES */
 
 a {
     text-decoration: none;
@@ -29,6 +41,12 @@ nav {
     background-color: white;
 }
 
+.navigation-item {
+    display: inline-flex;
+    margin-right: 20px;
+    font-family: 'Special Elite', cursive;
+}
+
 #darkmode {
     cursor: pointer;
 }
@@ -36,20 +54,6 @@ nav {
 #lightmode {
     display: none;
     cursor: pointer;
-}
-
-h1 {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 2rem;
-    margin-left: 50px;
-    letter-spacing: 0.25em;
-    color: gray;
-}
-
-.navigation-item {
-    display: inline-flex;
-    margin-right: 20px;
-    font-family: 'Special Elite', cursive;
 }
 
 .banner {
@@ -68,6 +72,8 @@ h1 {
     height: 200px;
     border-radius: 100%;
 }
+
+/* MAIN CONTENT STYLES */
 
 #aboutme {
     width: 100%;
@@ -136,15 +142,22 @@ i {
     padding-left: 10px;
 }
 
+.fa {
+    font-size: 20px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
 .project img {
     height: 300px;
     width: 300px;
 }
 
-#contact {
-    background-color: white;
-    border: 1px solid white;
-}
+/* FOOTER  STYLES */
 
 footer {
     margin-top: 30px;
@@ -155,17 +168,11 @@ footer {
     color: red;
 }
 
-.fa {
-    font-size: 20px;
-}
+/* CONTACT PAGE STLYES */
 
 #contact {
+    background-color: white;
+    border: 1px solid white;
     text-align: center;
-}
-
-.icon-container {
-    display: flex;
-    justify-content: space-around;
-    margin: 30px 0;
 }
 
